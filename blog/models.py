@@ -17,7 +17,7 @@ class Post(models.Model):
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
 
     class Meta:
-        ordering = ['-dated_added']
+        ordering = ['-date_added']
 
     def __str__(self):
         return self.title

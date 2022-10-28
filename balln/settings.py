@@ -32,6 +32,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['balln.herokuapp.com', 'localhost']
 
+CSRF_TRUSTED_ORIGINS = ['http://balln.herokuapp.com', 'http://localhost', 'https://8000-aasanusi-balln-dihemgv8e9y.ws-eu73.gitpod.io']
+
 
 # Application definition
 
@@ -131,6 +133,11 @@ STATIC_URL = 'static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+CLOUDINARY_STORAGE = {
+'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
+'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
+'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
+}
 
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'

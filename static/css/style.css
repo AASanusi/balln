@@ -127,14 +127,14 @@ a {
     color: #000000;
 }
 
-.link {
-    color: #23BBBB;
+.direct {
+    color: #0004ff;
     text-decoration: none;
 }
 
-.link:hover,
-.link:active {
-    color: #445261;
+.direct:hover,
+.direct:active {
+    color: #f78a63;
     text-decoration: underline;
 }
 

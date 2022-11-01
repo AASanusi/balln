@@ -26,6 +26,6 @@ class PostDetail(View):
             {
                 "post": post,
                 "comments": comments,
-                "liked": likes
+                "liked": liked
             },
         )

@@ -32,11 +32,19 @@ a {
     color: #ffd700 !important;
 }
 
-
 .brand {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
+    color: #ffd700;
+}
+
+.social {
+    font-size: 150%;
+    color: #ffd700;
+}
+
+.foot-colour {
     color: #ffd700;
 }
 

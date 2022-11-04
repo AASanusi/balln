@@ -8,7 +8,15 @@ a {
 }
 
 .nav-link {
-    color: #fff;
+    color: #fff !important;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #ffd700 !important;
+}
+
+.navbar-text {
+    color: #ffd700 !important;
 }
 
 

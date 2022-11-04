@@ -6,10 +6,10 @@
 <head>
     <title>BallN</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display+SC&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,7 +40,8 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}" aria-label=" To home page">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}"
+                            aria-label=" To home page">Home</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -48,7 +49,8 @@
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}" aria-label=" To register page">Register</a>
+                        <a class="nav-link" href="{% url 'account_signup' %}"
+                            aria-label=" To register page">Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_login' %}" aria-label=" To login page">Login</a>
@@ -89,23 +91,25 @@
         <p class="m-0 text-center text-white">Made by AASanusi</p>
         <p class="m-0 text-center text-white">Follow us:</p>
         <p class="m-0 text-center text-white">
-            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i
+            <a href="https://facebook.com" target="_blank" rel="noopener"
+                aria-label="Visit our Facebook page (opens in a new tab)"><i
                     class="fab fa-facebook-square ms-3"></i></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i
+            <a href="https://instagram.com" target="_blank" rel="noopener"
+                aria-label="Visit our Instagram page (opens in a new tab)"><i
                     class="fab fa-instagram-square ms-3"></i></a>
-            <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our Youtube page (opens in a new tab)"><i class="fab fa-youtube-square ms-3"></i></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square ms-3"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener"
+                aria-label="Visit our Youtube page (opens in a new tab)"><i class="fab fa-youtube-square ms-3"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener"
+                aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square ms-3"></i></a>
         </p>
 
     </footer>
     <script>
-
         setTimeout(function () {
             let messages = document.getElementById("msg");
             let alert = new bootstrap.Alert(messages);
             alert.close();
         }, 3000);
-
     </script>
 </body>
 

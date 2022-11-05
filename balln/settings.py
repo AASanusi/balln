@@ -33,7 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['balln.herokuapp.com', 'localhost']
 
-CSRF_TRUSTED_ORIGINS = ['http://balln.herokuapp.com', 'http://localhost', 'https://8000-aasanusi-balln-dihemgv8e9y.ws-eu73.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['http://balln.herokuapp.com', 'https://8000-aasanusi-balln-dihemgv8e9y.ws-eu74.gitpod.io']
 
 
 # Application definition

@@ -127,12 +127,12 @@ a {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #000000;
 }
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #ffd700;
 }
 
 .post-title {

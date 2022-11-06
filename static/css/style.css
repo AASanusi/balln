@@ -79,16 +79,16 @@ a {
 
 .image-flash {
     position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #23BBBB;
+    bottom: 1%;
+    background-color: black;
 }
 
 .author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
+    color: #ffeb3b;
+    margin: 2px;
+    text-transform: capitalize;
+    padding: 1px;
+    font-size: 10px;
 }
 
 .masthead {

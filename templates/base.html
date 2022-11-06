@@ -39,25 +39,18 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}"
+                
+                <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}"
                             aria-label=" To home page">Home</a>
-                    </li>
                     {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}" aria-label=" To logout page">Logout</a>
-                    </li>
+                    <a class="nav-link" href="{% url 'account_logout' %}" aria-label=" To logout page">Logout</a>
                     {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}"
+                    <a class="nav-link" href="{% url 'account_signup' %}"
                             aria-label=" To register page">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}" aria-label=" To login page">Login</a>
-                    </li>
+                    <a class="nav-link" href="{% url 'account_login' %}" aria-label=" To login page">Login</a>
                     {% endif %}
-                </ul>
+                  </nav>
                 <span class="navbar-text text-muted">
                     Football is more than a game!
                 </span>

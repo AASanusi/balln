@@ -101,8 +101,8 @@ a {
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
+    background-color: #000;
+    color: #ffeb3b;
     position: relative;
 }
 
@@ -142,7 +142,7 @@ a {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #fff;
 }
 
 .btn-signup {

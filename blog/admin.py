@@ -1,6 +1,13 @@
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post, Comment, Category
 from django_summernote.admin import SummernoteModelAdmin
+
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+
+    search_fields = ('title', 'slug')
+    prepopulated_fields = {'slug': ('title',)}
 
 
 @admin.register(Post)

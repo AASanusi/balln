@@ -125,15 +125,27 @@ a {
     z-index: 100;
 }
 
-.post-link {
-    text-decoration: none;
-    color: #000000;
+.btn-primary {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none !important;
 }
 
-.post-link:hover,
-.page-link {
+.btn-primary:hover {
+    background-color: #000000;
     color: #ffd700;
 }
+
+.page-link {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.page-link:hover {
+    background-color: #000000;
+    color: #ffd700;
+}
+
 
 .post-title {
     margin-top: 20%;

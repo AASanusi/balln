@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, Category
 from .forms import CommentForm
 
 
@@ -62,6 +62,17 @@ class PostDetail(View):
                 "commented": True,
                 "liked": liked,
                 "comment_form": CommentForm()
+            },
+        )
+
+    def category(request, slug):
+        category = get_object_or_404(Category, slug=slug)
+
+        return render(
+            request,
+            "category.html",
+            {
+                "category": category
             },
         )
 

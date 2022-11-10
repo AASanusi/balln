@@ -14,7 +14,7 @@ class PostList(generic.ListView):
 
 class PostDetail(View):
 
-    def get(self, request, slug, *args, **kwargs):
+    def get(self, request, category_slug, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('-date_added')
@@ -34,7 +34,7 @@ class PostDetail(View):
             },
         )
 
-    def post(self, request, category_slug, slug, *args, **kwargs):
+    def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('-date_added')
@@ -62,6 +62,19 @@ class PostDetail(View):
                 "commented": True,
                 "liked": liked,
                 "comment_form": CommentForm()
+            },
+        )
+
+
+class Category(View):
+    def get(self, request, category_slug, slug, *args, **kwargs):
+        category = get_object_or_404(Category, slug=slug)
+
+        return render(
+            request,
+            "category.html",
+            {
+                "category": category,
             },
         )
 

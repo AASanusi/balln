@@ -8,7 +8,7 @@
 
         <!-- Blog Entries Column-->
         <div class="col-md-8 mt-3 left">
-            {% for post in post_list %}
+            {% for post in category.post_list.all %}
             <div class="card mb-4">
                 <div class="card-body">
                     <div class="image-container">
@@ -24,7 +24,7 @@
                     </div>
                     <h2 class="card-title">{{ post.title }}</h2>
                     <p class="card-text">{{ post.excerpt }}</p>
-                    <a href="{% url 'post_detail' post.category.slug post.slug %}" class="btn btn-primary">
+                    <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary">
                         Read More
                     </a>
                     <hr />

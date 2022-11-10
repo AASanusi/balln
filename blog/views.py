@@ -65,17 +65,6 @@ class PostDetail(View):
             },
         )
 
-    def category(request, slug):
-        category = get_object_or_404(Category, slug=slug)
-
-        return render(
-            request,
-            "category.html",
-            {
-                "category": category
-            },
-        )
-
 
 class LikePost(View):
 

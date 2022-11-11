@@ -28,7 +28,8 @@
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
-                <p><small>Category: <a href="{% 'category' post.category.slug % }">{{ post.category }} </a> </small></p>
+                
+                <p><small>Category: <a href="{% url 'category' {{ post.category.category_id }}% }">{{ post.category.title }} </a> </small></p>
 
                 <p class="card-text ">
                     {{ post.body | safe }}

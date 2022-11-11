@@ -7,7 +7,6 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Category(models.Model):
     title = models.CharField(max_length=250, unique=True)
-    slug = models.SlugField(max_length=250, unique=True)
     category_id = models.IntegerField(default=1, null=False)
 
     class Meta:
@@ -21,7 +20,7 @@ class Category(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=250, unique=True)
     slug = models.SlugField(max_length=250, unique=True)
-    category = models.ForeignKey(Category, related_name='post', null=True, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, related_name='posts', null=True, on_delete=models.CASCADE)
     author = models.ForeignKey(User, related_name='blog_posts', on_delete=models.CASCADE)
     updated_on = models.DateTimeField(auto_now=True)
     body = models.TextField()

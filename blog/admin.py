@@ -6,8 +6,7 @@ from django_summernote.admin import SummernoteModelAdmin
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
 
-    search_fields = ('title', 'slug')
-    prepopulated_fields = {'slug': ('title',)}
+    search_fields = ('title',)
 
 
 @admin.register(Post)

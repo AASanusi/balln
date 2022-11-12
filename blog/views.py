@@ -66,14 +66,14 @@ class PostDetail(View):
         )
 
 
-def category(request, category_id):
+def category(request, id):
 
-    category = get_object_or_404(Category, pk=category_id)
+    category = get_object_or_404(Category, pk=id)
 
     context = {
         'category': category,
     }
-
+    posts = Post.objects.filter(category=category)
     return render(request, 'category.html', context)
 
 

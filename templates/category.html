@@ -8,6 +8,7 @@
 
         <!-- Blog Entries Column-->
         <div class="col-md-8 mt-3 left">
+            {{ category }}
             {% for post in category.post_list.all %}
             <div class="card mb-4">
                 <div class="card-body">

@@ -72,8 +72,8 @@ def category(request, id):
 
     context = {
         'category': category,
+        'posts': Post.objects.filter(category=category),
     }
-    posts = Post.objects.filter(category=category)
     return render(request, 'category.html', context)
 
 

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+
+    <div class="row">
+        
+        <h2>You can edit your comment here</h2>
+
+        <p>Posting as: {{ user.username }}</p>
+
+        <form method="post" action="{% url 'update_comment' comment.slug %}"  style="margin-top: 1.3em;">
+        {{ comment_form | crispy }}
+        {% csrf_token %}
+            <button type="submit" class="btn btn-signup btn-lg" aria-label="Click to edit your comment">Edit</button>
+        </form>
+
+        <hr>
+
+        <a href="{% url 'home' %}" class="btn btn-primary" aria-label="Click to go back to the Home page">HomePage</a>
+              
+    </div>
+</div>
+
+{%endblock%}

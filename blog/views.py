@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post, Category
@@ -88,3 +88,35 @@ class LikePost(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+def edit_comment(request, comment_id):
+    comment = get_object_or_404(Comment, pk=comment_id)
+
+    if request.method == 'POST':
+        form = CommentForm(request.POST, instance=comment)
+
+        if form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.save()
+            messages.success(request, 'Successfully updated your comment!')
+            return redirect(reverse('post_detail'))
+    else:
+        form = CommentForm(instance=comment)
+
+    context = {
+        'comment_form': comment_form,
+        'comment': comment
+    }
+    template = 'update_comment.htlm'
+
+    return render(request, context, template)
+
+
+def delete_comment(request, comment_id):
+    comment = get_object_or_404(Comment, pk=comment_id)
+
+    comment.delete()
+    messages.success(request, 'Comment has been deleted!')
+
+    return redirect(reverse('comment'))

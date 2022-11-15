@@ -95,8 +95,8 @@
                     </p>
                     {% if user.is_authenticated %}
                     {{  comment.body | linebreaks }}
-                    <a href="{% %}" class="btn btn-warning" aria-label="Click to edit comment">Edit</a>
-                    <a href="{% %}" class="btn btn-danger" aria-label="Click to delete comment">Delete</a>
+                    <a href="{% url 'update_comment' comment.slug %}" class="btn btn-warning" aria-label="Click to edit comment">Edit</a>
+                    <a href="{% url 'delete_comment' comment.slug %}" class="btn btn-danger" aria-label="Click to delete comment">Delete</a>
                     {% else %}
                     {{  comment.body | linebreaks }}
                     {% endif %}

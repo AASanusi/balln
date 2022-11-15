@@ -93,8 +93,13 @@
                             {{ comment.date_added }}
                         </span> wrote:
                     </p>
-
+                    {% if user.is_authenticated %}
                     {{  comment.body | linebreaks }}
+                    <a href="{% %}" class="btn btn-warning" aria-label="Click to edit comment">Edit</a>
+                    <a href="{% %}" class="btn btn-danger" aria-label="Click to delete comment">Delete</a>
+                    {% else %}
+                    {{  comment.body | linebreaks }}
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>

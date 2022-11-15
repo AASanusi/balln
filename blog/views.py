@@ -92,7 +92,7 @@ class LikePost(View):
 
 class EditComment(View):
     def post(request, comment_id):
-        comment = get_object_or_404(Comment, pk=comment_id)
+        comment = get_object_or_404(Comment, id=comment_id)
 
         if request.method == 'POST':
             form = CommentForm(request.POST, instance=comment)
@@ -116,7 +116,7 @@ class EditComment(View):
 
 class DeleteComment(View):
     def post(request, comment_id):
-        comment = get_object_or_404(Comment, pk=comment_id)
+        comment = get_object_or_404(Comment, id=comment_id)
 
         comment.delete()
         messages.success(request, 'Comment has been deleted!')

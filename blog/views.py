@@ -100,34 +100,13 @@ class CommentUpdateView(UpdateView):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=self.object.post.slug)
         return reverse('post_detail', args=[post.slug])
-    # def post(request, comment_id):
-    #     comment = get_object_or_404(Comment, id=comment_id)
-
-    #     if request.method == 'POST':
-    #         form = CommentForm(request.POST, instance=comment)
-
-    #         if form.is_valid():
-    #             comment = comment_form.save(commit=False)
-    #             comment.save()
-    #             messages.success(request, 'Successfully updated your comment!')
-    #             return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-    #     else:
-    #         form = CommentForm(instance=comment)
-
-    #     context = {
-    #         'comment_form': comment_form,
-    #         'comment': comment
-    #     }
-    #     template = 'update_comment.html'
-
-    #     return render(request, context, template)
 
 
 class CommentDeleteView(DeleteView):
-    def post(request, comment_id):
-        comment = get_object_or_404(Comment, id=comment_id)
+    model = Comment
+    template_name = 'delete_comment.html'
 
-        comment.delete()
-        messages.success(request, 'Comment has been deleted!')
-
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+    def get_success_url(self, **kwargs):
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=self.object.post.slug)
+        return reverse('post_detail', args=[post.slug])

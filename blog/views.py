@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.views.generic.edit import UpdateView, DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.http import HttpResponseRedirect
 from .models import Post, Category, Comment
 from .forms import CommentForm
@@ -91,10 +92,14 @@ class LikePost(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class CommentUpdateView(UpdateView):
+class CommentUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Comment
     form_class = CommentForm
     template_name = 'update_comment.html'
+
+    def test_func(self):
+        comment = self.get_object()
+        return self.request.user == comment.user
 
     def get_success_url(self, **kwargs):
         queryset = Post.objects.filter(status=1)
@@ -102,9 +107,13 @@ class CommentUpdateView(UpdateView):
         return reverse('post_detail', args=[post.slug])
 
 
-class CommentDeleteView(DeleteView):
+class CommentDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Comment
     template_name = 'delete_comment.html'
+
+    def test_func(self):
+        comment = self.get_object()
+        return self.request.user == comment.user
 
     def get_success_url(self, **kwargs):
         queryset = Post.objects.filter(status=1)

@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.views.generic.edit import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
-from .models import Post, Category
+from .models import Post, Category, Comment
 from .forms import CommentForm
 
 
@@ -90,31 +91,39 @@ class LikePost(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class EditComment(View):
-    def post(request, comment_id):
-        comment = get_object_or_404(Comment, id=comment_id)
+class CommentUpdateView(UpdateView):
+    model = Comment
+    form_class = CommentForm
+    template_name = 'update_comment.html'
 
-        if request.method == 'POST':
-            form = CommentForm(request.POST, instance=comment)
+    def get_success_url(self, **kwargs):
+        queryset = Post.objects.filter(status=1)
+        post = get_object_or_404(queryset, slug=self.object.post.slug)
+        return reverse('post_detail', args=[post.slug])
+    # def post(request, comment_id):
+    #     comment = get_object_or_404(Comment, id=comment_id)
 
-            if form.is_valid():
-                comment = comment_form.save(commit=False)
-                comment.save()
-                messages.success(request, 'Successfully updated your comment!')
-                return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-        else:
-            form = CommentForm(instance=comment)
+    #     if request.method == 'POST':
+    #         form = CommentForm(request.POST, instance=comment)
 
-        context = {
-            'comment_form': comment_form,
-            'comment': comment
-        }
-        template = 'update_comment.html'
+    #         if form.is_valid():
+    #             comment = comment_form.save(commit=False)
+    #             comment.save()
+    #             messages.success(request, 'Successfully updated your comment!')
+    #             return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+    #     else:
+    #         form = CommentForm(instance=comment)
 
-        return render(request, context, template)
+    #     context = {
+    #         'comment_form': comment_form,
+    #         'comment': comment
+    #     }
+    #     template = 'update_comment.html'
+
+    #     return render(request, context, template)
 
 
-class DeleteComment(View):
+class CommentDeleteView(DeleteView):
     def post(request, comment_id):
         comment = get_object_or_404(Comment, id=comment_id)
 

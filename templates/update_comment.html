@@ -2,7 +2,7 @@
 
 {% block content %}
 
-
+{% load crispy_forms_tags %}
 <div class="container">
 
     <div class="row">
@@ -12,7 +12,7 @@
         <p>Posting as: {{ user.username }}</p>
 
         <form method="post" action="{% url 'update_comment' comment.id %}"  style="margin-top: 1.3em;">
-        {{ comment_form | crispy }}
+        {{ form|crispy }}
         {% csrf_token %}
             <button type="submit" class="btn btn-signup btn-lg" aria-label="Click to edit your comment">Edit</button>
         </form>

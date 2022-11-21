@@ -93,7 +93,7 @@
                             {{ comment.date_added }}
                         </span> wrote:
                     </p>
-                    {% if user.is_authenticated %}
+                    {% if user.username == comment.name %}
                     {{  comment.body | linebreaks }}
                     <a href="{% url 'update_comment' comment.id %}" class="btn btn-warning" aria-label="Click to edit comment">Edit</a>
                     <a href="{% url 'delete_comment' comment.id %}" class="btn btn-danger" aria-label="Click to delete comment">Delete</a>

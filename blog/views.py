@@ -99,7 +99,9 @@ class CommentUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def test_func(self):
         comment = self.get_object()
-        return self.request.user == comment.user
+        print(self.request.user.username)
+        print(comment.name)
+        return self.request.user.username == comment.name
 
     def get_success_url(self, **kwargs):
         queryset = Post.objects.filter(status=1)
@@ -113,7 +115,9 @@ class CommentDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         comment = self.get_object()
-        return self.request.user == comment.user
+        print(self.request.user.username)
+        print(comment.name)
+        return self.request.user.username == comment.name
 
     def get_success_url(self, **kwargs):
         queryset = Post.objects.filter(status=1)

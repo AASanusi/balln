@@ -1,3 +1,5 @@
+""" Imports of comment and forms """
+
 from .models import Comment
 from django import forms
 

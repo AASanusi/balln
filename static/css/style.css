@@ -1,3 +1,5 @@
+/* Credit to code institute for providing a template and djangocentral for helping parts of css */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* Fonts */
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -19,6 +22,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* Navigation */
 
 .nav-link {
     color: #fff !important;
@@ -44,6 +49,8 @@ a {
     color: #ffd700;
 }
 
+/* Colours */
+
 .foot-colour {
     color: #ffd700;
 }
@@ -68,6 +75,7 @@ a {
     background-color: #F9FAFC;
 }
 
+/* Home and Detail page structure */
 .card {
     border: none;
     background-color: #ffd700;

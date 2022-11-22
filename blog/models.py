@@ -1,8 +1,18 @@
+"""
+Imports for the functionality of the model
+
+"""
+
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
+
+"""
+Category functions for model
+
+"""
 
 
 class Category(models.Model):
@@ -10,11 +20,20 @@ class Category(models.Model):
     category_id = models.IntegerField(default=1, null=False)
 
     class Meta:
+        """ The order of the category by title """
         ordering = ['title']
+        """ To set category to plural in admin """
         verbose_name_plural = 'Categories'
 
     def __str__(self):
+        """ To set category with its title """
         return self.title
+
+
+"""
+Post functions for model
+
+"""
 
 
 class Post(models.Model):
@@ -31,13 +50,22 @@ class Post(models.Model):
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
 
     class Meta:
+        """ Ordering of posts by date added """
         ordering = ['-date_added']
 
     def __str__(self):
+        """ Sets post by its name"""
         return self.title
 
     def number_of_likes(self):
+        """ Returns amount of likes """
         return self.likes.count()
+
+
+"""
+Comment functions for model
+
+"""
 
 
 class Comment(models.Model):
@@ -49,7 +77,9 @@ class Comment(models.Model):
     approved = models.BooleanField(default=False)
 
     class Meta:
+        """ Ordering of comments by date added """
         ordering = ['date_added']
 
     def __str__(self):
+        """ Sets comment with name and body of comment """
         return f"Comment {self.body} by {self.name}"

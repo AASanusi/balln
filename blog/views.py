@@ -1,3 +1,8 @@
+"""
+Imports for the functionality of users views
+
+"""
+
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.views.generic.edit import UpdateView, DeleteView
@@ -8,6 +13,7 @@ from .forms import CommentForm
 
 
 class PostList(generic.ListView):
+    """ Views of the list of posts fields on the home page """
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-date_added')
     paginate_by = 6
@@ -15,7 +21,7 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
-
+    """ Each individual detailed posts """
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -35,7 +41,7 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
-
+    """ Relationship between the views and backend """
     def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -80,7 +86,7 @@ def category(request, id):
 
 
 class LikePost(View):
-
+    """ Like and unlike posts and redirect to same post """
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 
@@ -93,16 +99,19 @@ class LikePost(View):
 
 
 class CommentUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """ Edit/Update option in the update_comment.html """
     model = Comment
     form_class = CommentForm
     template_name = 'update_comment.html'
 
+    """ Restrict access of users to other users comments """
     def test_func(self):
         comment = self.get_object()
         print(self.request.user.username)
         print(comment.name)
         return self.request.user.username == comment.name
 
+    """ Success url after edit for post """
     def get_success_url(self, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=self.object.post.slug)
@@ -110,15 +119,17 @@ class CommentUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
 
 class CommentDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """ Delete option in the delete_comment.html """
     model = Comment
     template_name = 'delete_comment.html'
 
+    """ Restrict access of users to other users comments """
     def test_func(self):
         comment = self.get_object()
         print(self.request.user.username)
         print(comment.name)
-        return self.request.user.username == comment.name
-
+        return self.request.user.username == comment.name       
+    """ Success url after delete for post """
     def get_success_url(self, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=self.object.post.slug)

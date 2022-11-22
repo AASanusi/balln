@@ -6,14 +6,14 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
-
+                <!-- Post title -->
                 <h1 class="post-title">{{ post.title }}</h1>
-
+                <!-- Post author and date post was added -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.date_added }}</p>
                 
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-
+                <!-- Placeholder image for featured image -->
                 {% if "placeholder" in post.featured_image.url %}
                 <img src="https://res.cloudinary.com/dr2oyv6h1/image/upload/v1669130441/players_playing_football_uus7fn.jpg" width="100%"
                 alt="Image of football players playing football">
@@ -29,9 +29,9 @@
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
-                
+                <!-- Category title specifically for each post in that category -->
                 <p><small>Category: <a href="{% url 'category' post.category.id %}">{{ post.category.title }} </a> </small></p>
-
+                <!-- Detailed content of the post -->
                 <p class="card-text ">
                     {{ post.body | safe }}
                 </p>
@@ -39,17 +39,18 @@
                 <div class="row">
 
                     <div class="col-1">
+                        <!-- Users signed in able to like and unlike -->
                         <strong>
                             {% if user.is_authenticated %}
 
-                            <form class="d-inline" action="{% url 'like_post' post.slug %}" method="POST">
+                            <form class="d-inline" action="{% url 'like_post' post.slug %}" method="POST" aria-label="Like the post">
                                 {% csrf_token %}
                                 {% if liked %}
                                 <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
-                                        class="fas fa-heart"></i></button>
+                                        class="fas fa-heart" aria-label="A filled heart to unlike a post"></i></button>
                                 {% else %}
                                 <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
-                                    class="far fa-heart"></i></button>
+                                    class="far fa-heart" aria-label="A unfilled heart to like a post"></i></button>
                                 {% endif %}
                             </form>
                             {% else %}
@@ -64,7 +65,7 @@
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments"></i>
+                        <strong class="text-secondary"><i class="far fa-comments" aria-label="Comment icon and number of comments"></i>
                             {{ total_comments }}
 
                         </strong>
@@ -81,9 +82,10 @@
     </div>
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 ">
+            <!-- Approved comments section -->
             <h3>Comments:</h3>
             <div class="card-body">
-
+                
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
@@ -94,6 +96,7 @@
                             {{ comment.date_added }}
                         </span> wrote:
                     </p>
+                    <!-- Restrict access to edit/delete comment from users accessing and body of comment -->
                     {% if user.username == comment.name %}
                     {{  comment.body | linebreaks }}
                     <a href="{% url 'update_comment' comment.id %}" class="btn btn-warning" aria-label="Click to edit comment">Edit</a>
@@ -120,7 +123,7 @@
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-signup btn-lg">Share!</button>
+                    <button type="submit" class="btn btn-signup btn-lg" aria-label="To submit your comment">Share!</button>
                 </form>
                 {% endif %}
                 {% endif %}

@@ -15,7 +15,8 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
 
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
+                <img src="https://res.cloudinary.com/dr2oyv6h1/image/upload/v1669130441/players_playing_football_uus7fn.jpg" width="100%"
+                alt="Image of football players playing football">
                 {% else %}
                 <img src=" {{ post.featured_image.url }}" width="100%">
                 {% endif %}

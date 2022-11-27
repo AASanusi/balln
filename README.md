@@ -15,6 +15,9 @@ Balln is a blog website provided for both football lovers and non football lover
       - [Revisiting Users](#Revisiting-Users)
 
 - [Design](#Design)
+   - [Wireframes](#Wireframes)
+   - [Typography](#Typography)
+
 
 - [Features](#Features)
    - [Existing Features](#Existing-Features)
@@ -95,6 +98,14 @@ For all football lovers and non football lovers that would like to view posts ab
 - As a revisiting user, I want to be able to be able to edit own comments.
 
 ## Design
+### Wireframes
+![]()
+![]()
+![]()
+![]()
+
+### Typography
+All fonts from this site were taken from Google Fonts.
 
 ## Features
 

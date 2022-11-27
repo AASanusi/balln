@@ -10,6 +10,7 @@ Balln is a blog website provided for both football lovers and non football lover
    - [Aim](#Aim)
    - [Target Audience](#Target-Audience)
    - [User Stories](#User-Stories)
+   - [User Goals](#User-Goals)
       - [First Time Users](#First-Time-Users)
       - [Revisiting Users](#Revisiting-Users)
 
@@ -53,10 +54,43 @@ Balln is a blog website provided for both football lovers and non football lover
 ## User Experience (UX)
 
 ### Aim
+The aim of this site is to provide a space for people to view post about current matters in football. The site is to bring together numerous football fans around the world connecting via these blog posts. The posts ranges from information about players to football technologies and history about football. The site allows users to be able to interact with the blog posts via likes and comments to spark up conversation and share their thoughts about the post. 
 
 ### Target Audience
+For all football lovers and non football lovers that would like to view posts about the current state of world football. 
 
 ### User Stories
+#### Admin Stories
+- As a Site Admin I can create, read, update and delete posts so that I can manage my blog content
+- As a Site Admin I can create draft posts so that I can finish writing the content later
+- As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
+
+#### User Stories
+- As a Site User I can view a paginated list of posts so that I can select which post I want to view.
+- As a Site User I can view a list of posts so that I can select one to read
+- As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral
+- As a Site User I can click on a post so that I can read the full text
+- As a Site User / Admin I can view comments on an individual post so that I can read the conversation
+- As a Site User I can register an account so that I can comment and like
+- As a Site User I can leave comments on a post so that I can be involved in the conversation
+- As a Site User I can like or unlike a post so that I can interact with the content
+- As a Site User I can choose which category of post so that I can read specific posts related to the category of choice
+
+### User Goals
+
+#### First Time Users
+- As a first time user, I want to be able access the site.
+- As a first time user, I would like information on how to navigate the site.
+- As a first time user, I want to be able to register to the site.
+- As a first time user, I want to be able to view posts.
+- As a first time user, I want to be able to like and unlike posts.
+- As a first time user, I want to be able to choose specific categories for posts.
+
+#### Revisting Users
+- As a revisiting user, I want to be able to login back into the site.
+- As a revisiting user, I want to be able to view posts.
+- As a revisiting user, I want to be able to be able to like and unlike posts.
+- As a revisiting user, I want to be able to be able to edit own comments.
 
 ## Design
 

@@ -2,7 +2,7 @@
 
 Balln is a blog website provided for both football lovers and non football lover who wants to learn more about football and get recent information about what is currently happening in the world of football. There are different posts which provides different information on what to look out for in football right now. It is an interactive page that allows Users to be able to show love for certain poosts and also share their thoughts about what they feel about a particular post in order to invoke conversation. BallN blog allows for convesation to be had and acquiring knowledge about certain topics in football.
 
-![Screenshot of app responsiveness](media/screenshot-of%20responsiveness.png)
+![Screenshot of app responsiveness](media/screenshot-of-responsiveness.png)
 [Link to BallN Here!]()
 
 ## Contents

@@ -117,45 +117,80 @@ All fonts from this site were taken from Google Fonts.
 
 #### Home
 ![]()
-#### About Page
-![]()
 #### Navigation
 ![]()
-#### Post detail
+#### Post Detail
+![]()
+#### Footer Links
 ![]()
 ### C.R.U.D:
 
 #### Create Comment
-![]()
+![Screenshot of create page](media/screenshot-of-create.png)
 #### Read Comment
-![]()
+![Screenshot of read page](media/screenshot-of-read.png)
 #### Edit Comment Page
-![]()
+![Screenshot of edit/update page](media/screenshot-of-update-edit.png)
 #### Delete Comment Page
-![]()
+![Screenshot of delete page](media/screenshot-of-delete.png)
 #### Admin Page
-![]()
+![Screenshot of admin page](media/screenshot-of-admin.png)
 #### Register Page
 ![]()
 #### Login Page
 ![]()
 #### Logout Page
-![]()
+![Screenshot of logout page](media/screenshot-of-sign-out.png)
 ### Features Left to Implement
+
+- To add another model to which users are able to like / unlike other users comments.
+- To add another model to which users are able to reply to other users comments.
+- To add highlight videos of football matches on the home page.
 
 ## Technologies Used
 
 ### Languages Used
-- [HTML5]()
-- [CSS]()
-- [JavaScript]()
-- [Python]()
-- [Django]()
-- [SQL]()
+- [HTML5](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+- [Django](https://www.djangoproject.com/)
 
+### Frameworks, Libraries And Programs 
 
+1. #### [Balsamiq](https://balsamiq.com/)
+   - Balsamiq was used to create the basic frameworks of the project to which helped to coding the website.
 
-### Frameworks, Libraries And Programs Used
+2. #### [Smartdraw](https://www.smartdraw.com/)
+   - Smartdraw was used to create my Entity Relationship Diagram to help structure the database scheme.
+
+3. #### [Git:](https://git-scm.com/)
+   - Git was used in the Gitpod terminal to add, commit and push code to Github.
+
+4. #### [Gitpod:](https://www.gitpod.io/)
+   - Gitpod is the Integrated Developer Environment used to code this project.
+
+5. #### [Github:](https://github.com/)
+   - Github was used to hold and keep the pushed codes by Git and store projects.
+
+6. #### [Gitpod Python Essentials Template:](https://github.com/Code-Institute-Org/python-essentials-template)
+   - Gitpod Python Essentials Template was provided by code institute and it consisted of all the relevant tools needed for the successful running of the application.
+
+7. #### [Heroku](https://id.heroku.com/login)
+   - Heroku was used to deploy the project.
+
+8. #### [PostgreSQL](https://www.postgresql.org/)
+   - This was used for database.
+
+9. #### [ElephantSQL](https://www.elephantsql.com/)
+   - This was used as the new database.
+
+10. #### [Google Fonts](https://fonts.google.com/about)
+   - This was used to form the fonts for the page.
+
+11. #### [Favicon](https://www.favicon.cc/)
+   - This was used to create an icon for the site tab.
+
 
 ### Installed Packages:
 
@@ -178,22 +213,45 @@ All fonts from this site were taken from Google Fonts.
 
 ## Credits
 
-### Code
+### Content/Code
+   - [Code Institue](https://codeinstitute.net/) walkthrough video "Hello Django" and "I Think Therefore I Blog" to form the basic Django code for my project. 
+   - [Code Institue](https://codeinstitute.net/) walkthrough video to help with installing all the packages, using database correctly and deploying to Heroku.
+   - [Code With Stein](https://www.youtube.com/watch?v=m3hhLE1KR5Q) youtube tutorial aided in helping to create models. Also to create the admin page correctly.
+   - [Bek Brace](https://www.youtube.com/watch?v=oU9kN13-Xbs) aided to understanding Django framework
+   - [Code With Stein](https://www.youtube.com/watch?v=m3hhLE1KR5Q) helped with providing idea on how to create another model.
+   - [W3Schools](https://www.w3schools.com/) came very useful to help create bootstrap navigation bars.
+   - [Bootstrap](https://getbootstrap.com/) this was used to help form the basic grid structure layout of the page.
+   - [Djangocentral](https://djangocentral.com/) helped me to structure my site posts vertically and also helped me to create the comment model.
+   - [Data Flair](https://data-flair.training/blogs/django-crud-example/) provided me better understanding on how to go about implementing C.R.U.D.
+   - [Stackoverflow](https://stackoverflow.com/questions/73004670/i-want-to-crud-the-comments-of-a-django-user) helped to create the first two parts of C.R.U.D the Create and Read.
+   - [geeksforgeeks](https://www.geeksforgeeks.org/django-crud-create-retrieve-update-delete-function-based-views/) helped to create the last two parts of C.R.U.D which is the update and delete.
+   - [Bootstrap](https://getbootstrap.com/) helped to create the edit and delete buttons.
+   - [Stackoverflow](https://stackoverflow.com/questions/15754424/using-csrf-protect-on-view-get-methods) to help understand csrf_protect.
+   - [DJANGO.FUN](https://django.fun/en/docs/crispy-forms/1.12/filters/) used for crispy filter. 
+   - [Django (anti)patterns](https://www.django-antipatterns.com/antipattern/checking-ownership-through-the-userpassestestmixin.html) used to restrict access to edit an object in this case the comments.
 
-
-### Content
-
-
+   
 ### Media
-
-
+- All images taken from google.
 
 ### Acknowledgments
 - #### Mentor
-  
+   - Thanks to my Mentor for providing me with ideas for project.
+   - Thanks to my mentor for the continous feedback during our meetings.
+   - Thanks to my mentor for making sure I pass eaxh criteria for the project.
+   - Thanks to my mentor for always providing space for me to learn more stuffs and improve my skills as a software engineer.
 
 - #### Tutor Support Team
-  
+   - Thanks to Josh for helping me to sort out the my for loop and post structure.
+   - Thanks to Jason for helping sort out error messages that occured when created the category model.
+   - Thanks to Ger for helping me to sort out linking my categories to my posts.
+   - Thanks to Rebecca for helping sort out the bug for when the browser wasn't rendering the comments time stamp.
+   - Thanks to Sean for helping sort out that my favicon was appearing.
+   - Thanks to Ed for helping sort out the issues I was having when trying to implement restriction of users to edit/delete comments of other users.
 
 - #### Fellow classmates/aluminis on Slack
-  
+   - Thanks to my fellow classmate Jared for the moral support and also helping to understand databases.
+   - Thanks to Eoghan for providing me with many resources to help aid me with my project.
+   - Thanks to Ger for giving tips on how to deploy.
+   - Thanks to Jason for helping fix my deployment issues.
+   - Thanks to Mikaela for providing information on how to go about forming my project.

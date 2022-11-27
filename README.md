@@ -99,10 +99,14 @@ For all football lovers and non football lovers that would like to view posts ab
 
 ## Design
 ### Wireframes
-![]()
-![]()
-![]()
-![]()
+#### Home:
+![Screenshot of wireframe of home page](media/screenshot-of-wireframe-home.png)
+#### Post Detail:
+![Screenshot of wireframe of post detail page](media/screenshot-of-wireframe-post-detail.png)
+#### Sign In:
+![Screenshot of wireframe of sign in](media/screenshot-of-wireframe-sign-in.png)
+#### Sign Up:
+![Screenshot of wireframe of sign up](media/screenshot-of-wireframe-sign-up.png)
 
 ### Typography
 All fonts from this site were taken from Google Fonts.

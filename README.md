@@ -116,36 +116,44 @@ All fonts from this site were taken from Google Fonts.
 ### Existing Features
 
 #### Home
-
+![]()
 #### About Page
-
+![]()
 #### Navigation
-
+![]()
 #### Post detail
-
+![]()
 ### C.R.U.D:
 
 #### Create Comment
-
+![]()
 #### Read Comment
-
+![]()
 #### Edit Comment Page
-
+![]()
 #### Delete Comment Page
-
+![]()
 #### Admin Page
-
+![]()
 #### Register Page
-
+![]()
 #### Login Page
-
+![]()
 #### Logout Page
-
+![]()
 ### Features Left to Implement
 
 ## Technologies Used
 
 ### Languages Used
+- [HTML5]()
+- [CSS]()
+- [JavaScript]()
+- [Python]()
+- [Django]()
+- [SQL]()
+
+
 
 ### Frameworks, Libraries And Programs Used
 

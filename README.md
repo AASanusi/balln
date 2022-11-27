@@ -76,7 +76,7 @@ For all football lovers and non football lovers that would like to view posts ab
 - As a Site User I can like or unlike a post so that I can interact with the content
 - As a Site User I can choose which category of post so that I can read specific posts related to the category of choice
 
-[Screenshot of User Stories on Github](media/screenshot-of-user-stories-on-github.png)
+![Screenshot of User Stories on Github](media/screenshot-of-user-stories-on-github.png)
 
 ### User Goals
 

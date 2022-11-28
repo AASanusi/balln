@@ -210,6 +210,26 @@ All fonts from this site were taken from Google Fonts.
 ### Unfixed Bugs
 
 ## Deployment
+The following instructions will provide you with information on how to Deploy to Heroku successfully which begins from setting up Django and Deploying to Heroku.
+
+### Step 1
+   - #### Installing Django and Supporting Libraries in the Terminal
+      - Install "pip3 install django gunicorn"
+      - Install "pip3 install dj_database_url pstcopg2"
+      - Install "pip3 install dj3-cloudinary-storage"
+      - Create "pip3 freeze --local > requirements.txt"
+      - Create "django-admin startproject"
+      - Create python manage.py startupp
+      - In settings Add to Installed Apps
+      - Migraate changes "python3 manage.py migrate"
+      - Run Server to Test "python3 manage.py runserver"
+
+- ### Step 2
+   - #### A) Create the Heroku app
+      - Create new Heroku App
+      - Add Database to App Resources
+      - Copy DATABASE_URL value
+
 
 ## Credits
 
@@ -229,6 +249,7 @@ All fonts from this site were taken from Google Fonts.
    - [Stackoverflow](https://stackoverflow.com/questions/15754424/using-csrf-protect-on-view-get-methods) to help understand csrf_protect.
    - [DJANGO.FUN](https://django.fun/en/docs/crispy-forms/1.12/filters/) used for crispy filter. 
    - [Django (anti)patterns](https://www.django-antipatterns.com/antipattern/checking-ownership-through-the-userpassestestmixin.html) used to restrict access to edit an object in this case the comments.
+   - [Code Institue](https://codeinstitute.net/) deployment cheat sheet provide information on how to deploy and used to write README deployment section.
 
    
 ### Media

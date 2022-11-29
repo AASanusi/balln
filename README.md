@@ -116,17 +116,25 @@ All fonts from this site were taken from Google Fonts.
 ### Existing Features
 
 #### Home
-![]()
+![Screenshot of home](media/screenshot-of-home-page.png)
+
 #### Navigation
-![]()
+![Screenshot of navigation](media/screenshot-of-navigation.png)
+
 #### Post Detail
 ![]()
-#### Footer Links
+
+#### Categories
 ![]()
+
+#### Footer Links
+![Screenshot of footer](media/screenshot-of-footer-links.png)
+
 ### C.R.U.D:
 
 #### Create Comment
 ![Screenshot of create page](media/screenshot-of-create.png)
+![Screenshot of approve comment](media/screenshot-of-approve-comment-message.png)
 #### Read Comment
 ![Screenshot of read page](media/screenshot-of-read.png)
 #### Edit Comment Page
@@ -136,16 +144,17 @@ All fonts from this site were taken from Google Fonts.
 #### Admin Page
 ![Screenshot of admin page](media/screenshot-of-admin.png)
 #### Register Page
-![]()
+![Screenshot of register page](media/screenshot-of-register.png)
 #### Login Page
-![]()
+![Screenshot of sign in](media/screenshot-of-sign-in.png)
 #### Logout Page
 ![Screenshot of logout page](media/screenshot-of-sign-out.png)
-### Features Left to Implement
 
+### Features Left to Implement
 - To add another model to which users are able to like / unlike other users comments.
 - To add another model to which users are able to reply to other users comments.
 - To add highlight videos of football matches on the home page.
+- To add categories section on the home page.
 
 ## Technologies Used
 
@@ -210,7 +219,7 @@ All fonts from this site were taken from Google Fonts.
 ### Unfixed Bugs
 
 ## Deployment
-The following instructions will provide you with information on how to Deploy to Heroku successfully which begins from setting up Django and Deploying to Heroku.
+The following instructions will provide you with information on how to Deploy to Heroku successfully from setting up Django to Deploying to Heroku.
 
 ### Step 1
    - #### Installing Django and Supporting Libraries in the Terminal
@@ -218,17 +227,65 @@ The following instructions will provide you with information on how to Deploy to
       - Install "pip3 install dj_database_url pstcopg2"
       - Install "pip3 install dj3-cloudinary-storage"
       - Create "pip3 freeze --local > requirements.txt"
-      - Create "django-admin startproject"
-      - Create python manage.py startupp
+      - Create "django-admin startproject balln"
+      - Create python manage.py startupp blog
       - In settings Add to Installed Apps
       - Migraate changes "python3 manage.py migrate"
       - Run Server to Test "python3 manage.py runserver"
 
 - ### Step 2
    - #### A) Create the Heroku app
+      - Log in or Sign up to Heroku.
       - Create new Heroku App
       - Add Database to App Resources
       - Copy DATABASE_URL value
+
+   - #### B) Attach the Database
+      - Create new env.py file on top level directory
+      - Import os library
+      - Set environment variables: os.environ["DATABASE_URL"] = "Paste in Heroku DATABASE_URL Link"
+      - Add in secret key: os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
+      - In heroku - Add Secret Key to Config Vars: SECRET_KEY, “With your randon secret key you made up”
+    
+   - #### C) Prepare our environment and settings.py file
+      - Reference env.py 
+      - Remove the insecure secret key and replace - links to the SECRET_KEY variable on Heroku 
+      - Comment out the old DataBases Section 
+      - Add new DATABASES Section 
+      - Save all files and Make Migrations: python3 manage.py migrate  
+
+   - #### D) Get our static and media files stored on Cloudinary
+      - Add [Cloudinary](https://cloudinary.com/users/login) URL/API_KEY/API_SECRET/API_CLOUD_NAME to Heroku Config Vars
+      - Add Cloudinary Libraries to installed apps
+      - Tell Django to use Cloudinary to store media and static files
+      - Link file to the templates directory in Heroku
+      - Change the templates directory to TEMPLATES_DIR
+      - Add Heroku Hostname to ALLOWED_HOSTS
+      - Create 3 new folders on top level directory 
+      - Create procfile on the top level directory
+      - Remember to ADD, Commit and Push
+
+- ### Step 3
+   - #### Deployment to Heroku
+      - Log in or Sign up to [Heroku](https://www.heroku.com/).
+      - On dashboard, click "Create New App" or click the "New" dropdown menu on the top right of the page to access "Create New App"
+      - On the "Create New App" page, name your app (needs to be a unique name), choose a region and click the "Create App" button.
+      - On app page, find and select the "Settings" tab at the top of the page. Scroll down and locate the "Convig Vars" on the settings page.
+      - Click "Reveal Config Vars".
+      - Change in database - sign up to [Elephantsql](https://www.elephantsql.com/), acquire [Elephantsql](https://www.elephantsql.com/) Database Url and add "Key":DATABASE_URL | "Value": URL supplied by [Elephantsql](https://www.elephantsql.com/) to Heroku
+      - Add "Key":Cloudinary URL/API_KEY/API_SECRET/API_CLOUD_NAME | "Value":API environment variable to Heroku Config Vars
+      - Add "Key":SECRET_KEY | "Value":Your random secret key
+      - Scroll back up and locate the "Deploy" tab and select to access the page.
+      - Once on the "Deploy" page, find "Deployment method" section, select "Github" and click the "Connect to Github" button.
+      - On "Connect to Github" section, search for your Github repository name you want to deploy by using the empty input field provided and click "Search" to search for the repository name.
+      - After clicking "Search", repository name should appear and then click "Connect" button beside it. Now everytime you push to Github, you will be able to deploy on Heroku.
+      - Scroll down, to "Automatic deploys" and "Manual deploy" section. You can deploy via these two options.
+      - You can set up "Automatic deploys" by clicking on "Enable Automatic Deploys"
+      - To deploy manually, click the "Deploy Branch" button.
+      - Finally, you'll see "Your app was successfully deployed" pop up message with a "View" button to access the deployed application.
+
+
+
 
 
 ## Credits

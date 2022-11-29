@@ -40,7 +40,7 @@
 
             <div class="collapse navbar-collapse" id="navbarText">
                 
-                <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+                <nav class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <a class="nav-link active" aria-current="page" href="{% url 'home' %}"
                             aria-label=" To home page">Home</a>
                     {% if user.is_authenticated %}
@@ -51,9 +51,6 @@
                     <a class="nav-link" href="{% url 'account_login' %}" aria-label=" To login page">Login</a>
                     {% endif %}
                   </nav>
-                <span class="navbar-text text-muted">
-                    Football is more than a game!
-                </span>
             </div>
         </div>
     </nav>

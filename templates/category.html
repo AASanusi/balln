@@ -7,7 +7,9 @@
     <div class="row">
 
         <!-- Blog Entries Column For Relevant Category-->
-        {{ category }}
+        <div class="col-md-8 mt-3 left">
+            <button type="button" class="btn btn-dark">{{ category }}</button>
+        </div>
         {% for post in posts %}
         <div class="col-md-8 mt-3 left">
             <div class="card mb-4">

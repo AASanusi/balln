@@ -139,10 +139,16 @@ a {
     color: #ffd700;
 }
 
+.btn-primary:active {
+    background-color: #000000 !important;
+    color: #ffd700;
+}
+
 .btn {
     background-color: #000000;
     color: #ffd700;
 }
+
 
 .page-link {
     background-color: #000000;

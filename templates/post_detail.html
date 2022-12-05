@@ -10,13 +10,13 @@
                 <h1 class="post-title">{{ post.title }}</h1>
                 <!-- Post author and date post was added -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.date_added }}</p>
-                
+
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- Placeholder image for featured image -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://res.cloudinary.com/dr2oyv6h1/image/upload/v1669130441/players_playing_football_uus7fn.jpg" width="100%"
-                alt="Image of football players playing football">
+                <img src="https://res.cloudinary.com/dr2oyv6h1/image/upload/v1669130441/players_playing_football_uus7fn.jpg"
+                    width="100%" alt="Image of football players playing football">
                 {% else %}
                 <img src=" {{ post.featured_image.url }}" width="100%">
                 {% endif %}
@@ -30,12 +30,13 @@
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
                 <!-- Category title specifically for each post in that category -->
-                <p><strong>Category: <a href="{% url 'category' post.category.id %}" class="btn">{{ post.category.title }} </a> </strong></p>
+                <p><strong>Category: <a href="{% url 'category' post.category.id %}"
+                            class="btn">{{ post.category.title }} </a> </strong></p>
                 <!-- Detailed content of the post -->
                 <p class="card-text ">
                     {{ post.body | safe }}
                 </p>
-                
+
                 <div class="row">
 
                     <div class="col-1">
@@ -43,19 +44,19 @@
                         <strong>
                             {% if user.is_authenticated %}
 
-                            <form class="d-inline" action="{% url 'like_post' post.slug %}" method="POST" aria-label="Like the post">
+                            <form class="d-inline" action="{% url 'like_post' post.slug %}" method="POST"
+                                aria-label="Like the post">
                                 {% csrf_token %}
                                 {% if liked %}
                                 <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
                                         class="fas fa-heart" aria-label="A filled heart to unlike a post"></i></button>
                                 {% else %}
                                 <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
-                                    class="far fa-heart" aria-label="A unfilled heart to like a post"></i></button>
+                                        class="far fa-heart" aria-label="A unfilled heart to like a post"></i></button>
                                 {% endif %}
                             </form>
                             {% else %}
-                            <span class="text-secondary"><i
-                                class="far fa-heart"></i>
+                            <span class="text-secondary"><i class="far fa-heart"></i>
                             </span>
                             {% endif %}
                         </strong>
@@ -65,7 +66,8 @@
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments" aria-label="Comment icon and number of comments"></i>
+                        <strong class="text-secondary"><i class="far fa-comments"
+                                aria-label="Comment icon and number of comments"></i>
                             {{ total_comments }}
 
                         </strong>
@@ -85,7 +87,7 @@
             <!-- Approved comments section -->
             <h3>Comments:</h3>
             <div class="card-body">
-                
+
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
@@ -99,8 +101,10 @@
                     <!-- Restrict access to edit/delete comment from users accessing and body of comment -->
                     {% if user.username == comment.name %}
                     {{  comment.body | linebreaks }}
-                    <a href="{% url 'update_comment' comment.id %}" class="btn btn-warning" aria-label="Click to edit comment">Edit</a>
-                    <a href="{% url 'delete_comment' comment.id %}" class="btn btn-danger" aria-label="Click to delete comment">Delete</a>
+                    <a href="{% url 'update_comment' comment.id %}" class="btn btn-warning"
+                        aria-label="Click to edit comment">Edit</a>
+                    <a href="{% url 'delete_comment' comment.id %}" class="btn btn-danger"
+                        aria-label="Click to delete comment">Delete</a>
                     {% else %}
                     {{  comment.body | linebreaks }}
                     {% endif %}
@@ -109,8 +113,8 @@
             </div>
         </div>
         <div class="col-md-4 card mb-4  mt-3 ">
+            {% if commented %}
             <div class="card-body">
-                {% if commented %}
                 <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval
                 </div>
@@ -123,12 +127,13 @@
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-signup btn-lg" aria-label="To submit your comment">Share!</button>
+                    <button type="submit" class="btn btn-signup btn-lg"
+                        aria-label="To submit your comment">Share!</button>
                 </form>
-                {% endif %}
-                {% endif %}
             </div>
         </div>
+        {% endif %}
+        {% endif %}
     </div>
 </div>
 

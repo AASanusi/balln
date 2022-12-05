@@ -220,6 +220,22 @@ All fonts from this site were taken from Google Fonts.
 ### Automated Testing
 
 ### Validator Testing
+#### HTML Validator
+- Home 
+![Screenshot of HTML Validator for Home](media/screenshot-of-base-home-html-validator.png)
+- Post detail
+![Screenshot of HTML Validator for Post Detail](media)
+- Signup
+![Screenshot of HTML Validator for Signup](media/screenshot-of-signup-html-validator.png)
+- Login
+![Screenshot of HTML Validator for Login](media/screenshot-of-login-html-validator.png)
+
+#### CSS Validator
+![Screenshot of CSS Validator](media/screenshot-of-css-validator.png)
+
+#### Lighthouse Validator
+![Screenshot of Lighthouse Validator](media/screenshot-of-lighthouse.png)
+#### PEP8
 
 ### Bugs Encountered And Solutions:
  - #### Bugs

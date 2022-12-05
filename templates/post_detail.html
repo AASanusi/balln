@@ -30,7 +30,7 @@
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
                 <!-- Category title specifically for each post in that category -->
-                <p><strong>Category: <a href="{% url 'category' post.category.id %}" class="btn btn-primary">{{ post.category.title }} </a> </strong></p>
+                <p><strong>Category: <a href="{% url 'category' post.category.id %}" class="btn">{{ post.category.title }} </a> </strong></p>
                 <!-- Detailed content of the post -->
                 <p class="card-text ">
                     {{ post.body | safe }}

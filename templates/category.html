@@ -17,7 +17,8 @@
                     <div class="image-container">
                         {% if "placeholder" in post.featured_image.url %}
                         <img class="card-img-top"
-                            src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+                            src="https://res.cloudinary.com/dr2oyv6h1/image/upload/v1669130441/players_playing_football_uus7fn.jpg"
+                            width="100" alt="Image of football players playing football">
                         {% else %}
                         <img class="card-img-top" src=" {{ post.featured_image.url }}">
                         {% endif %}
@@ -30,7 +31,7 @@
                     <a href="{% url 'post_detail' post.slug %}" class="btn">
                         Read More
                     </a>
-                    <hr />
+                    <hr>
                     <p class="card-text h6">{{ post.date_added}} <i class="far fa-heart"></i>
                         {{ post.number_of_likes }}</p>
                 </div>
@@ -42,7 +43,6 @@
         {% endif %}
         {% endfor %}
     </div>
-</div>
 </div>
 {% if is_paginated %}
 <nav aria-label="Page navigation">
@@ -56,6 +56,5 @@
     </ul>
 </nav>
 {% endif %}
-</div>
 
 {%endblock%}

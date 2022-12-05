@@ -135,7 +135,7 @@ All fonts from this site were taken from Google Fonts.
 ![]()
 
 #### Categories
-![]()
+![Screenhot of Category](media/screenshot-of-category.png)
 
 #### Footer Links
 ![Screenshot of footer](media/screenshot-of-footer-links.png)

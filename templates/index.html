@@ -17,7 +17,7 @@
                             src="https://res.cloudinary.com/dr2oyv6h1/image/upload/v1669130441/players_playing_football_uus7fn.jpg"
                             alt="Image of football players playing football">
                         {% else %}
-                        <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                        <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="Image for post correlating with the post">
                         {% endif %}
                         <div class="image-flash">
                             <p class="author">Author: {{ post.author }}</p>
@@ -28,7 +28,7 @@
                     <a href="{% url 'post_detail' post.slug %}" class="btn">
                         Read More
                     </a>
-                    <hr />
+                    <hr>
                     <p class="card-text h6">{{ post.date_added}} <i class="far fa-heart"></i>
                         {{ post.number_of_likes }}</p>
                 </div>
@@ -41,7 +41,6 @@
         {% endif %}
         {% endfor %}
     </div>
-</div>
 </div>
 <!-- Pagination -->
 {% if is_paginated %}
@@ -56,6 +55,5 @@
     </ul>
 </nav>
 {% endif %}
-</div>
 
 {%endblock%}

@@ -16,9 +16,9 @@
                 <!-- Placeholder image for featured image -->
                 {% if "placeholder" in post.featured_image.url %}
                 <img src="https://res.cloudinary.com/dr2oyv6h1/image/upload/v1669130441/players_playing_football_uus7fn.jpg"
-                    width="100%" alt="Image of football players playing football">
+                    width="100" alt="Image of football players playing football">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%">
+                <img src=" {{ post.featured_image.url }}" alt="Image of what post is about" width="100">
                 {% endif %}
             </div>
         </div>

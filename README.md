@@ -99,6 +99,10 @@ For all football lovers and non football lovers that would like to view posts ab
 - As a revisiting user, I want to be able to be able to edit own comments.
 
 ## Design
+
+### Typography
+All fonts from this site were taken from Google Fonts.
+
 ### Wireframes
 #### Home:
 ![Screenshot of wireframe of home page](media/screenshot-of-wireframe-home.png)
@@ -109,8 +113,8 @@ For all football lovers and non football lovers that would like to view posts ab
 #### Sign Up:
 ![Screenshot of wireframe of sign up](media/screenshot-of-wireframe-sign-up.png)
 
-### Typography
-All fonts from this site were taken from Google Fonts.
+### Entity Relationship Diagram
+![Screenshot of erd]()
 
 ## Features
 

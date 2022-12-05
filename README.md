@@ -15,8 +15,9 @@ Balln is a blog website provided for both football lovers and non football lover
       - [Revisiting Users](#Revisiting-Users)
 
 - [Design](#Design)
-   - [Wireframes](#Wireframes)
    - [Typography](#Typography)
+   - [Wireframes](#Wireframes)
+   - [Entity Relationship Diagram](#Entity-Relationship-Diagram)
 
 
 - [Features](#Features)

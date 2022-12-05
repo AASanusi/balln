@@ -139,6 +139,11 @@ a {
     text-decoration: none !important;
 }
 
+.badge {
+    background-color: #000000;
+    color: #ffd700;
+}
+
 
 .page-link {
     background-color: #000000;

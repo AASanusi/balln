@@ -16,9 +16,9 @@
                 <!-- Placeholder image for featured image -->
                 {% if "placeholder" in post.featured_image.url %}
                 <img src="https://res.cloudinary.com/dr2oyv6h1/image/upload/v1669130441/players_playing_football_uus7fn.jpg"
-                    width="100%" alt="Image of football players playing football">
+                class="image" alt="Image of football players playing football">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" alt="Image of what post is about" width="100%">
+                <img src=" {{ post.featured_image.url }}" alt="Image of what post is about" class="image">
                 {% endif %}
             </div>
         </div>
@@ -113,8 +113,8 @@
             </div>
         </div>
         <div class="col-md-4 card mb-4  mt-3 ">
-            {% if commented %}
             <div class="card-body">
+                {% if commented %}
                 <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval
                 </div>
@@ -130,10 +130,10 @@
                     <button type="submit" class="btn btn-signup btn-lg"
                         aria-label="To submit your comment">Share!</button>
                 </form>
+                {% endif %}
+                {% endif %}
             </div>
         </div>
-        {% endif %}
-        {% endif %}
     </div>
 </div>
 

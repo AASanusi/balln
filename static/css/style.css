@@ -78,6 +78,10 @@ a {
     background-color: #ffd700;
 }
 
+.image {
+    width: 100%;
+}
+
 .image-container {
     position: relative;
 }

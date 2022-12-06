@@ -42,27 +42,38 @@ Balln is a blog website provided for both football lovers and non football lover
 
 - [Technologies Used](#Technologies-Used)
    - [Languages Used](#Languages-Used)
-   - [APIs And Libraries Used](#APIs-And-Libraries-Used)
    - [Frameworks, Libraries And Programs Used](#Frameworks-Libraries-And-Programs-Used)
-      - [Lucid Chart](#Lucid-Chart)
+      - [Balsamiq](#Balsamiq)
+      - [Smartdraw](#Smartdraw)
       - [Git](#Git)   
       - [Gitpod](#Gitpod)
       - [Github](#Github)
       - [Gitpod Python Essentials Template](#Gitpod-Python-Essentials-Template)
       - [Heroku](#Heroku)
+      - [PostgreSQL](#PostgreSQL)
+      - [ElephantSQL](#ElephantSQL)
+      - [Google Fonts](#Google-Fonts)
+      - [Favicon](#Favicon)
 
 - [Testing](#Testing)
-  - [Bugs Encountered And Solutions](#Bugs-Encountered-And-Solutions)
-  - [Validator Testing](#Validator-Testing)
-     - [PEP8 Online](#PEP8-Online)    
-  - [Unfixed Bugs](#Unfixed-Bugs)
+   - [Manual Testing](#Manual-Testing)
+   - [Automated Testing](#Automated-Testing)
+   - [Validator Testing](#Validator-Testing)
+      - [HTML Validator](#HTML-Validator) 
+      - [CSS Validator](#CSS-Validator) 
+      - [Lighthouse Validator](#Lighthouse-Validator) 
+      - [PEP8 Online](#PEP8-Online)
+   - [Bugs Encountered And Solutions](#Bugs-Encountered-And-Solutions)   
+   - [Unfixed Bugs](#Unfixed-Bugs)
 
 - [Deployment](#Deployment)
+   - [Step 1](#Step-1)
+   - [Step 2](#Step-2)
+   - [Step 3](#Step-3)
 
 - [Credits](#Credits)
-   - [Code](#Code)
    - [Content](#Content)
-   - [Media](#Media)
+   - [Media](#Content)
    - [Acknowledgments](#Acknowledgments)
 
 ## User Experience (UX)
@@ -185,7 +196,7 @@ All fonts from this site were taken from Google Fonts.
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 - [Django](https://www.djangoproject.com/)
 
-### Frameworks, Libraries And Programs 
+### Frameworks, Libraries And Programs Used 
 
 1. #### [Balsamiq](https://balsamiq.com/)
    - Balsamiq was used to create the basic frameworks of the project to which helped to coding the website.
@@ -249,7 +260,7 @@ All fonts from this site were taken from Google Fonts.
 
 ### Bugs Encountered And Solutions:
  - #### Bugs
-
+   
  - #### Solution
 
 ### Unfixed Bugs

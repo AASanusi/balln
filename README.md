@@ -10,6 +10,8 @@ Balln is a blog website provided for both football lovers and non football lover
    - [Aim](#Aim)
    - [Target Audience](#Target-Audience)
    - [User Stories](#User-Stories)
+      - [Admin Stories](#Admin-Stories)
+      - [User Stories](#User-Stories)
    - [User Goals](#User-Goals)
       - [First Time Users](#First-Time-Users)
       - [Revisiting Users](#Revisiting-Users)
@@ -22,13 +24,21 @@ Balln is a blog website provided for both football lovers and non football lover
 
 - [Features](#Features)
    - [Existing Features](#Existing-Features)
-      - [Welcome](#Welcome)
-      - [View Songs On Playlist](#View-Songs-On-Playlist)
-      - [Submit Songs To Playlist](#Submit-Songs-To-Playlist)
-      - [Repeat Or Quit Application](#Repeat-Or-Quit-Application)
-      - [Exit Message](#Exit-Message)
-      - [Google Worksheet](#Google-Worksheet)
-      - [Features Left To Implement](#Features-Left-To-Implement)
+      - [Home](#Home)
+      - [Navigation](#Navigation)
+      - [Post Detail](#Post-Detail)
+      - [Category](#Category)
+      - [Footer Links](#Footer-Links)
+   - [C.R.U.D:](#C.R.U.D:)
+      - [Create Comment](#Create-Comment)
+      - [Read Comment](#Read-Comment)
+      - [Edit Comment Page](#Edit-Comment-Page)
+      - [Delete Comment Page](#Delete-Comment-Page)
+      - [Admin Page](#Admin-Page)
+      - [Register Page](#Register-Page)
+      - [Login Page](#Login-Page)
+      - [Logout Page](#Logout-Page)
+   - [Features Left to Implement](#Features-Left-to-Implement)
 
 - [Technologies Used](#Technologies-Used)
    - [Languages Used](#Languages-Used)
@@ -134,7 +144,7 @@ All fonts from this site were taken from Google Fonts.
 #### Post Detail
 ![]()
 
-#### Categories
+#### Category
 ![Screenhot of Category](media/screenshot-of-category.png)
 
 #### Footer Links

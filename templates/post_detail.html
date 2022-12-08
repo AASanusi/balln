@@ -33,9 +33,9 @@
                 <p><strong>Category: <a href="{% url 'category' post.category.id %}"
                             class="btn">{{ post.category.title }} </a> </strong></p>
                 <!-- Detailed content of the post -->
-                <p class="card-text ">
+                <div class="card-text ">
                     {{ post.body | safe }}
-                </p>
+                </div>
 
                 <div class="row">
 
@@ -66,8 +66,7 @@
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments"
-                                aria-label="Comment icon and number of comments"></i>
+                        <strong class="text-secondary"><i class="far fa-comments"></i>
                             {{ total_comments }}
 
                         </strong>

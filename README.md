@@ -323,6 +323,11 @@ All fonts from this site were taken from Google Fonts.
  - #### Solution
    The structure of the paragraphs were changed to a div and the font code on summernote in admin was also changed to correct the errors.
 
+ - #### Bugs
+   During development part, gitpod server number changes at times when running server and causes the browser not to fucntion. 
+ - #### Solution
+   To solve this I simple had to change the number in the CSRF to correlate with the new number on the gitpod link.
+
 ### Unfixed Bugs
    All bugs were fixed before the submission of this project.
 

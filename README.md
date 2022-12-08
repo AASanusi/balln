@@ -126,13 +126,13 @@ All fonts from this site were taken from Google Fonts.
 
 ### Wireframes
 #### Home:
-![Screenshot of wireframe of home page](media/screenshot-of-wireframe-home.png)
+![Screenshot of Wireframe of Home Page](media/screenshot-of-wireframe-home.png)
 #### Post Detail:
-![Screenshot of wireframe of post detail page](media/screenshot-of-wireframe-post-detail.png)
+![Screenshot of Wireframe of Post Detail Page](media/screenshot-of-wireframe-post-detail.png)
 #### Sign In:
-![Screenshot of wireframe of sign in](media/screenshot-of-wireframe-sign-in.png)
+![Screenshot of Wireframe of Sign In](media/screenshot-of-wireframe-sign-in.png)
 #### Sign Up:
-![Screenshot of wireframe of sign up](media/screenshot-of-wireframe-sign-up.png)
+![Screenshot of Wireframe of Sign Up](media/screenshot-of-wireframe-sign-up.png)
 
 ### Entity Relationship Diagram
 - ERD for Post
@@ -147,39 +147,41 @@ All fonts from this site were taken from Google Fonts.
 ### Existing Features
 
 #### Home
-![Screenshot of home](media/screenshot-of-home-page.png)
+![Screenshot of Home](media/screenshot-of-home-page.png)
 
 #### Navigation
-![Screenshot of navigation](media/screenshot-of-nav.png)
+![Screenshot of Navigation](media/screenshot-of-nav.png)
 
 #### Post Detail
-![]()
+![Screenhot of Post Detail](media/screenshot-of-post-detail-page.png)
 
 #### Category
 ![Screenhot of Category](media/screenshot-of-category.png)
 
 #### Footer Links
-![Screenshot of footer](media/screenshot-of-footer-links.png)
+![Screenshot of Footer](media/screenshot-of-footer-links.png)
 
 ### C.R.U.D:
 
 #### Create Comment
-![Screenshot of create page](media/screenshot-of-create.png)
-![Screenshot of approve comment](media/screenshot-of-approve-comment-message.png)
+![Screenshot of Create Page](media/screenshot-of-create.png)
+![Screenshot of Approve Comment](media/screenshot-of-approve-comment-message.png)
 #### Read Comment
-![Screenshot of read page](media/screenshot-of-read.png)
+![Screenshot of Read Page](media/screenshot-of-read.png)
 #### Edit Comment Page
-![Screenshot of edit/update page](media/screenshot-of-update-edit.png)
+![Screenshot of Edit/Update page](media/screenshot-of-update-edit.png)
 #### Delete Comment Page
-![Screenshot of delete page](media/screenshot-of-delete.png)
+![Screenshot of Delete page](media/screenshot-of-delete.png)
 #### Admin Page
-![Screenshot of admin page](media/screenshot-of-admin.png)
+![Screenshot of Admin page](media/screenshot-of-admin.png)
 #### Register Page
-![Screenshot of register page](media/screenshot-of-register.png)
+![Screenshot of Register page](media/screenshot-of-register.png)
 #### Login Page
-![Screenshot of sign in](media/screenshot-of-sign-in.png)
+![Screenshot of User Sign In](media/screenshot-of-user-sign-in.png)
+![Screenshot of User Signed In](media/screenshot-of-user-signed-in.png)
 #### Logout Page
-![Screenshot of logout page](media/screenshot-of-sign-out.png)
+![Screenshot of Sign Out Page](media/screenshot-of-sign-out.png)
+![Screenshot of User Signed Out Page](media/screenshot-of-user-signed-out.png)
 
 ### Features Left to Implement
 - To add another model to which users are able to like / unlike other users comments.
@@ -245,7 +247,7 @@ All fonts from this site were taken from Google Fonts.
 - Home 
 ![Screenshot of HTML Validator for Home](media/screenshot-of-base-home-html-validator.png)
 - Post detail
-![Screenshot of HTML Validator for Post Detail](media)
+![Screenshot of HTML Validator for Post Detail](media/screenshot-of-post-detail-html-validator.png)
 - Signup
 ![Screenshot of HTML Validator for Signup](media/screenshot-of-signup-html-validator.png)
 - Login
@@ -255,15 +257,18 @@ All fonts from this site were taken from Google Fonts.
 ![Screenshot of CSS Validator](media/screenshot-of-css-validator.png)
 
 #### Lighthouse Validator
-![Screenshot of Lighthouse Validator](media/screenshot-of-lighthouse.png)
+![Screenshot of Lighthouse Validator](media/screenshot-of-lighthouse-testing.png)
 #### PEP8
 
 ### Bugs Encountered And Solutions:
  - #### Bugs
+   There were issues with the fonts and paragraphs for the post details to which was causing errors on the html validator.
    
  - #### Solution
+   The structure of the paragraphs were changed to a div and the font code on summernote in admin was also changed to correct the errors.
 
 ### Unfixed Bugs
+   All bugs were fixed before the submission of this project.
 
 ## Deployment
 The following instructions will provide you with information on how to Deploy to Heroku successfully from setting up Django to Deploying to Heroku.

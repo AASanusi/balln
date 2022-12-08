@@ -258,7 +258,19 @@ All fonts from this site were taken from Google Fonts.
 
 #### Lighthouse Validator
 ![Screenshot of Lighthouse Validator](media/screenshot-of-lighthouse-testing.png)
-#### PEP8
+#### CI Python Linter
+   - admin.py
+   ![Screenshot of Python Testing for Admin.py](media/screenshot-of-python-testing-admin.png)
+   - apps.py
+   ![Screenshot of Python Testing for Apps.py](media/screenshot-of-python-testing-apps.png)
+   - forms.py
+   ![Screenshot of Python Testing for Forms.py](media/screenshot-of-python-testing-forms.png)
+   - models.py
+   ![Screenshot of Python Testing for Models.py](media/screenshot-of-python-testing-models.png)
+   - urls.py
+   ![Screenshot of Python Testing for Urls.py](media/screenshot-of-python-testing-urls.png)
+   - views.py
+   ![Screenshot of Python Testing for Views.py](media/screenshot-of-python-testing-views.png)
 
 ### Bugs Encountered And Solutions:
  - #### Bugs

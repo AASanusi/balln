@@ -37,7 +37,7 @@ ALLOWED_HOSTS = ['balln.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
     'http://balln.herokuapp.com',
-    'https://8000-aasanusi-balln-dihemgv8e9y.ws-eu77.gitpod.io']
+    'https://8000-aasanusi-balln-dihemgv8e9y.ws-eu78.gitpod.io']
 
 
 # Application definition

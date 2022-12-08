@@ -54,7 +54,7 @@ Balln is a blog website provided for both football lovers and non football lover
       - [ElephantSQL](#ElephantSQL)
       - [Google Fonts](#Google-Fonts)
       - [Favicon](#Favicon)
-   - [Installed Packages](Installed-Packages)
+   - [Installed Packages](#Installed-Packages)
 
 - [Testing](#Testing)
    - [Manual Testing](#Manual-Testing)

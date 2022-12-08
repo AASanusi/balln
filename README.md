@@ -235,6 +235,21 @@ All fonts from this site were taken from Google Fonts.
 
 
 ### Installed Packages:
+   - 'django.contrib.admin',
+   - 'django.contrib.auth',
+   - 'django.contrib.contenttypes',
+   -  'django.contrib.sessions',
+   -  'django.contrib.messages',
+   -  'django.contrib.sites',
+   -  'allauth',
+   -  'allauth.account',
+   -  'allauth.socialaccount',
+   -  'cloudinary_storage',
+   -  'django.contrib.staticfiles',
+   -  'cloudinary',
+   -  'django_summernote',
+   -  'crispy_forms',
+   -  'blog',
 
 ## Testing
 
@@ -243,22 +258,25 @@ All fonts from this site were taken from Google Fonts.
 ### Automated Testing
 
 ### Validator Testing
-#### HTML Validator
-- Home 
+#### [HTML Validator](https://validator.w3.org/nu/)
+   - Below HTML files passed through [W3C Validator](https://validator.w3.org/nu/) with no errors found.
+   - Home 
 ![Screenshot of HTML Validator for Home](media/screenshot-of-base-home-html-validator.png)
-- Post detail
+   - Post detail
 ![Screenshot of HTML Validator for Post Detail](media/screenshot-of-post-detail-html-validator.png)
-- Signup
+   - Signup
 ![Screenshot of HTML Validator for Signup](media/screenshot-of-signup-html-validator.png)
-- Login
+   - Login
 ![Screenshot of HTML Validator for Login](media/screenshot-of-login-html-validator.png)
 
-#### CSS Validator
+#### [CSS Validator](https://jigsaw.w3.org/css-validator/)
+   - CSS files passed through [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) with no errors found. 
 ![Screenshot of CSS Validator](media/screenshot-of-css-validator.png)
 
 #### Lighthouse Validator
 ![Screenshot of Lighthouse Validator](media/screenshot-of-lighthouse-testing.png)
 #### CI Python Linter
+   - Below python files were passed through [PEP8 validator](https://pep8ci.herokuapp.com/) and no errors were found.
    - admin.py
    ![Screenshot of Python Testing for Admin.py](media/screenshot-of-python-testing-admin.png)
    - apps.py

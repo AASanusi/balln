@@ -29,7 +29,7 @@ Balln is a blog website provided for both football lovers and non football lover
       - [Post Detail](#Post-Detail)
       - [Category](#Category)
       - [Footer Links](#Footer-Links)
-   - [C.R.U.D:](#C.R.U.D:)
+   - [C.R.U.D:](#CRUD:)
       - [Create Comment](#Create-Comment)
       - [Read Comment](#Read-Comment)
       - [Edit Comment Page](#Edit-Comment-Page)
@@ -62,7 +62,7 @@ Balln is a blog website provided for both football lovers and non football lover
       - [HTML Validator](#HTML-Validator) 
       - [CSS Validator](#CSS-Validator) 
       - [Lighthouse Validator](#Lighthouse-Validator) 
-      - [PEP8 Online](#PEP8-Online)
+      - [CI Python Linter](#CI-Python-Linter)
    - [Bugs Encountered And Solutions](#Bugs-Encountered-And-Solutions)   
    - [Unfixed Bugs](#Unfixed-Bugs)
 
@@ -73,7 +73,7 @@ Balln is a blog website provided for both football lovers and non football lover
 
 - [Credits](#Credits)
    - [Content](#Content)
-   - [Media](#Content)
+   - [Media](#Media)
    - [Acknowledgments](#Acknowledgments)
 
 ## User Experience (UX)
@@ -113,7 +113,7 @@ For all football lovers and non football lovers that would like to view posts ab
 - As a first time user, I want to be able to like and unlike posts.
 - As a first time user, I want to be able to choose specific categories for posts.
 
-#### Revisting Users
+#### Revisiting Users
 - As a revisiting user, I want to be able to login back into the site.
 - As a revisiting user, I want to be able to view posts.
 - As a revisiting user, I want to be able to be able to like and unlike posts.
@@ -125,13 +125,13 @@ For all football lovers and non football lovers that would like to view posts ab
 All fonts from this site were taken from Google Fonts.
 
 ### Wireframes
-#### Home:
+#### Home Wireframe:
 ![Screenshot of Wireframe of Home Page](media/screenshot-of-wireframe-home.png)
-#### Post Detail:
+#### Post Detail Wireframe:
 ![Screenshot of Wireframe of Post Detail Page](media/screenshot-of-wireframe-post-detail.png)
-#### Sign In:
+#### Sign In Wireframe:
 ![Screenshot of Wireframe of Sign In](media/screenshot-of-wireframe-sign-in.png)
-#### Sign Up:
+#### Sign Up Wireframe:
 ![Screenshot of Wireframe of Sign Up](media/screenshot-of-wireframe-sign-up.png)
 
 ### Entity Relationship Diagram
@@ -161,7 +161,7 @@ All fonts from this site were taken from Google Fonts.
 #### Footer Links
 ![Screenshot of Footer](media/screenshot-of-footer-links.png)
 
-### C.R.U.D:
+### CRUD:
 
 #### Create Comment
 ![Screenshot of Create Page](media/screenshot-of-create.png)
@@ -270,7 +270,7 @@ All fonts from this site were taken from Google Fonts.
    - The like button doesn't work when not signed in and comment section doesn't show when not signed up or signed in.
    - Interaction on a post cannot be accessed when using a signed in link page to another browser such as incognito and will need to sign in again.
    
-   #### Manual Testing on Deployment in Heroku
+   #### Manual Testing on Admin
    - Posts are able to be created as normal.
    - Comments were able to be approved and deleted.
    - Categories tested fine and more categories can be added.
@@ -278,7 +278,7 @@ All fonts from this site were taken from Google Fonts.
 
 
    #### Manual Testing on Deployment in Heroku
-    - Deployment of app works when automatically deployed to Heroku.
+   - Deployment of app works when automatically deployed to Heroku.
 
 ### Automated Testing
    #### UnitTest
@@ -403,7 +403,7 @@ The following instructions will provide you with information on how to Deploy to
 
 ## Credits
 
-### Content/Code
+### Content
    - [Code Institue](https://codeinstitute.net/) walkthrough video "Hello Django" and "I Think Therefore I Blog" to form the basic Django code for my project. 
    - [Code Institue](https://codeinstitute.net/) walkthrough video to help with installing all the packages, using database correctly and deploying to Heroku.
    - [Code With Stein](https://www.youtube.com/watch?v=m3hhLE1KR5Q) youtube tutorial aided in helping to create models. Also to create the admin page correctly.

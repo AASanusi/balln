@@ -254,8 +254,34 @@ All fonts from this site were taken from Google Fonts.
 ## Testing
 
 ### Manual Testing
+   #### Manual Testing on UI
+   - The home page loads up as normal. 
+   - The logo on the home page works as it loads the home page when clicked.
+   - The home navigation redirects to home when clicked on.
+   - The register navigation loads to the sign up page. The form page was manually tested by inserting information to which signed up to website.
+   - Now logged when signed up, the logout page directs you to a sign out page and when click sign out button it logs you out.
+   - Login form works and logs in user when filled correctly.
+   - Each read more button works for all posts on the home page when clicked on to which take you to the post in detailed form.
+   - The next button at the bottom of the page works as it take you to the next page when clicked.
+   - Footer links works as it directs you to each social media page when clicked on.
+   - When logged in the heart button works when clicked and hearts the post.
+   - The comment body was tested and  worked as when logged in can comment and view comments. When logged in edit and delete button works as it should.
+   - The category button works to which takes you to a different page when clicked on. On this category page, all the relevant post under that categories was visible.
+   - The like button doesn't work when not signed in and comment section doesn't show when not signed up or signed in.
+   - Interaction on a post cannot be accessed when using a signed in link page to another browser such as incognito and will need to sign in again.
+   
+   #### Manual Testing on Deployment in Heroku
+   - Posts are able to be created as normal.
+   - Comments were able to be approved and deleted.
+   - Categories tested fine and more categories can be added.
+   - Users can't gain access to the admin page and will be asked to have login for it.
+
+
+   #### Manual Testing on Deployment in Heroku
+    - Deployment of app works when automatically deployed to Heroku.
 
 ### Automated Testing
+   #### UnitTest
 
 ### Validator Testing
 #### [HTML Validator](https://validator.w3.org/nu/)

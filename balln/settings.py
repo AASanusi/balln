@@ -36,7 +36,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 ALLOWED_HOSTS = ['balln.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://balln.herokuapp.com', 
+    'http://balln.herokuapp.com',
     'https://8000-aasanusi-balln-dihemgv8e9y.ws-eu77.gitpod.io']
 
 

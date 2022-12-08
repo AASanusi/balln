@@ -128,7 +128,7 @@ class CommentDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         comment = self.get_object()
         print(self.request.user.username)
         print(comment.name)
-        return self.request.user.username == comment.name       
+        return self.request.user.username == comment.name
     """ Success url after delete for post """
     def get_success_url(self, **kwargs):
         queryset = Post.objects.filter(status=1)

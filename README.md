@@ -29,7 +29,7 @@ Balln is a blog website provided for both football lovers and non football lover
       - [Post Detail](#Post-Detail)
       - [Category](#Category)
       - [Footer Links](#Footer-Links)
-   - [C.R.U.D:](#CRUD:)
+   - [Create Read Update Delete:](#Create-Read-Update-Delete:)
       - [Create Comment](#Create-Comment)
       - [Read Comment](#Read-Comment)
       - [Edit Comment Page](#Edit-Comment-Page)
@@ -54,6 +54,7 @@ Balln is a blog website provided for both football lovers and non football lover
       - [ElephantSQL](#ElephantSQL)
       - [Google Fonts](#Google-Fonts)
       - [Favicon](#Favicon)
+   - [Installed Packages](Installed-Packages)
 
 - [Testing](#Testing)
    - [Manual Testing](#Manual-Testing)
@@ -161,7 +162,7 @@ All fonts from this site were taken from Google Fonts.
 #### Footer Links
 ![Screenshot of Footer](media/screenshot-of-footer-links.png)
 
-### CRUD:
+### Create Read Update Delete:
 
 #### Create Comment
 ![Screenshot of Create Page](media/screenshot-of-create.png)

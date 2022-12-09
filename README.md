@@ -1,6 +1,6 @@
 # BallN
 
-BallN is a football blog created for both football lovers and non football lovers who wants to provide information regarding the current affiar in world football. There are various posts providing relevant information on what to look out for in football right now. It is an interactive site that allows Users to be able to show their appreciation and share their thoughts on any post in order to invoke conversation. 
+BallN is a football blog created for both football lovers and non football lovers who wants to provide information regarding the current affiar in world football. There are various posts providing relevant information on what to look out for in football right now. It is an interactive site that allows Users to be able to show their appreciation and share their thoughts on any post in order to evoke conversation. 
 
 ![Screenshot of app responsiveness](media/screenshot-of-app-responsiveness.png)
 [Link to BallN Here!](https://balln.herokuapp.com/)

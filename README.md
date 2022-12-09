@@ -1,6 +1,6 @@
 # BallN
 
-Balln is a blog website provided for both football lovers and non football lover who wants to learn more about football and get recent information about what is currently happening in the world of football. There are different posts which provides different information on what to look out for in football right now. It is an interactive page that allows Users to be able to show love for certain poosts and also share their thoughts about what they feel about a particular post in order to invoke conversation. BallN blog allows for convesation to be had and acquiring knowledge about certain topics in football.
+BallN is a football blog created for both football lovers and non football lovers who wants to provide information regarding the current affiar in world football. There are various posts providing relevant information on what to look out for in football right now. It is an interactive site that allows Users to be able to show their appreciation and share their thoughts on any post in order to invoke conversation. 
 
 ![Screenshot of app responsiveness](media/screenshot-of-app-responsiveness.png)
 [Link to BallN Here!](https://balln.herokuapp.com/)
@@ -80,27 +80,27 @@ Balln is a blog website provided for both football lovers and non football lover
 ## User Experience (UX)
 
 ### Aim
-The aim of this site is to provide a space for people to view post about current matters in football. The site is to bring together numerous football fans around the world connecting via these blog posts. The posts ranges from information about players to football technologies and history about football. The site allows users to be able to interact with the blog posts via likes and comments to spark up conversation and share their thoughts about the post. 
+The aim of this site is to provide a space for people to view various post about current matters in football. The site aims to bring together football fans around the world. The posts ranges from information about players to football technologies and history about football. The site allows users to be able to interact with the blog posts via likes and comments to spark up conversation and share their thoughts about the post. 
 
 ### Target Audience
 For all football lovers and non football lovers that would like to view posts about the current state of world football. 
 
 ### User Stories
 #### Admin Stories
-- As a Site Admin I can create, read, update and delete posts so that I can manage my blog content
-- As a Site Admin I can create draft posts so that I can finish writing the content later
-- As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
+- As a Site Admin I can create, read, update and delete posts so that I can manage my blog content.
+- As a Site Admin I can create draft posts so that I can finish writing the content later.
+- As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
 
 #### User Stories
 - As a Site User I can view a paginated list of posts so that I can select which post I want to view.
-- As a Site User I can view a list of posts so that I can select one to read
-- As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral
-- As a Site User I can click on a post so that I can read the full text
-- As a Site User / Admin I can view comments on an individual post so that I can read the conversation
-- As a Site User I can register an account so that I can comment and like
-- As a Site User I can leave comments on a post so that I can be involved in the conversation
-- As a Site User I can like or unlike a post so that I can interact with the content
-- As a Site User I can choose which category of post so that I can read specific posts related to the category of choice
+- As a Site User I can view a list of posts so that I can select one to read.
+- As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
+- As a Site User I can click on a post so that I can read the full text.
+- As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
+- As a Site User I can register an account so that I can comment and like.
+- As a Site User I can leave comments on a post so that I can be involved in the conversation.
+- As a Site User I can like or unlike a post so that I can interact with the content.
+- As a Site User I can choose which category of post so that I can read specific posts related to the category of choice.
 
 ![Screenshot of User Stories on Github](media/screenshot-of-user-stories-on-github.png)
 
@@ -187,8 +187,8 @@ All fonts from this site were taken from Google Fonts.
 ### Features Left to Implement
 - To add another model to which users are able to like / unlike other users comments.
 - To add another model to which users are able to reply to other users comments.
-- To add highlight videos of football matches on the home page.
-- To add categories section on the home page.
+- To add a home page that shows highlight videos of football matches.
+- To add categories section on the home page so Users can choose categories they want to interact with.
 
 ## Technologies Used
 
@@ -256,37 +256,37 @@ All fonts from this site were taken from Google Fonts.
 
 ### Manual Testing
    #### Manual Testing on UI
-   - The home page loads up as normal. 
+   - The home page loads up as properly. 
    - The logo on the home page works as it loads the home page when clicked.
    - The home navigation redirects to home when clicked on.
-   - The register navigation loads to the sign up page. The form page was manually tested by inserting information to which signed up to website.
-   - Now logged when signed up, the logout page directs you to a sign out page and when click sign out button it logs you out.
+   - The register navigation loads to the sign up page. The form page was manually tested by inserting information to which user signed up to website.
+   - Clicking the logout page directs you to a sign out page and when click sign out button it logs you out.
    - Login form works and logs in user when filled correctly.
-   - Each read more button works for all posts on the home page when clicked on to which take you to the post in detailed form.
-   - The next button at the bottom of the page works as it take you to the next page when clicked.
-   - Footer links works as it directs you to each social media page when clicked on.
-   - When logged in the heart button works when clicked and hearts the post.
-   - The comment body was tested and  worked as when logged in can comment and view comments. When logged in edit and delete button works as it should.
-   - The category button works to which takes you to a different page when clicked on. On this category page, all the relevant post under that categories was visible.
-   - The like button doesn't work when not signed in and comment section doesn't show when not signed up or signed in.
-   - Interaction on a post cannot be accessed when using a signed in link page to another browser such as incognito and will need to sign in again.
+   - Each read more button works for all posts on the home page when clicked on to and takes you to the post in detail.
+   - The next button at the bottom of the page goes to the next page when clicked.
+   - Footer links opens up to each social media page when clicked on.
+   - Ensured the like button works when clicked on and hearts the post. User cannot like post when signed up or logged in.
+   - Ensured commenting on a post worked when logged in. Also ensured editing and deleting of the comment worked too.
+   - Ensured that the category button worked and takes user to a different page when clicked on. On this category page, all the relevant post under that categories was visible.
+   - Ensured security on users interaction on posts. Ensured users can't interact or alter other users engagement as page ensures that user will have to sign in again.
+   - Ensured that all the functions mentioned above worked on mobile phone to which everrything tested great.
    
    #### Manual Testing on Admin
-   - Posts are able to be created as normal.
-   - Comments were able to be approved and deleted.
-   - Categories tested fine and more categories can be added.
-   - Users can't gain access to the admin page and will be asked to have login for it.
+   - Ensured Posts are able to be created.
+   - Ensured Comments were able to be approved and deleted.
+   - Ensured Categories can be added.
+   - ENsured security so that Users can't gain access to the admin page and will be asked to have login for it.
 
 
    #### Manual Testing on Deployment in Heroku
-   - Deployment of app works when automatically deployed to Heroku.
+   - Ensured that app was deployed correctly and successful in Heroku.
 
 ### Automated Testing
    #### UnitTest
 
 ### Validator Testing
 #### [HTML Validator](https://validator.w3.org/nu/)
-   - Below HTML files passed through [W3C Validator](https://validator.w3.org/nu/) with no errors found.
+   - Below are HTML files that were passed through [W3C Validator](https://validator.w3.org/nu/) with no errors found.
    - Home 
 ![Screenshot of HTML Validator for Home](media/screenshot-of-base-home-html-validator.png)
    - Post detail
@@ -303,7 +303,7 @@ All fonts from this site were taken from Google Fonts.
 #### Lighthouse Validator
 ![Screenshot of Lighthouse Validator](media/screenshot-of-lighthouse-testing.png)
 #### CI Python Linter
-   - Below python files were passed through [PEP8 validator](https://pep8ci.herokuapp.com/) and no errors were found.
+   - Below are python files that were passed through [PEP8 validator](https://pep8ci.herokuapp.com/) and no errors were found.
    - admin.py
    ![Screenshot of Python Testing for Admin.py](media/screenshot-of-python-testing-admin.png)
    - apps.py
@@ -322,10 +322,10 @@ All fonts from this site were taken from Google Fonts.
    There were issues with the fonts and paragraphs for the post details to which was causing errors on the html validator.
    
  - #### Solution
-   The structure of the paragraphs were changed to a div and the font code on summernote in admin was also changed to correct the errors.
+   The structure of the paragraphs were changed to a div and the font code on summernote in the admin was also changed to correct the errors.
 
  - #### Bugs
-   During development part, gitpod server number changes at times when running server and causes the browser not to fucntion. 
+   During developmental stage, gitpod server number changes when running server and causes the browser not to fucntion. 
  - #### Solution
    To solve this I simple had to change the number in the CSRF to correlate with the new number on the gitpod link.
 
@@ -399,19 +399,16 @@ The following instructions will provide you with information on how to Deploy to
       - Finally, you'll see "Your app was successfully deployed" pop up message with a "View" button to access the deployed application.
 
 
-
-
-
 ## Credits
 
 ### Content
-   - [Code Institue](https://codeinstitute.net/) walkthrough video "Hello Django" and "I Think Therefore I Blog" to form the basic Django code for my project. 
+   - [Code Institue](https://codeinstitute.net/) walkthrough video "Hello Django" and "I Think Therefore I Blog" helped to form the basic Django code for my project. 
    - [Code Institue](https://codeinstitute.net/) walkthrough video to help with installing all the packages, using database correctly and deploying to Heroku.
    - [Code With Stein](https://www.youtube.com/watch?v=m3hhLE1KR5Q) youtube tutorial aided in helping to create models. Also to create the admin page correctly.
-   - [Bek Brace](https://www.youtube.com/watch?v=oU9kN13-Xbs) aided to understanding Django framework
+   - [Bek Brace](https://www.youtube.com/watch?v=oU9kN13-Xbs) aided to understanding Django framework.
    - [Code With Stein](https://www.youtube.com/watch?v=m3hhLE1KR5Q) helped with providing idea on how to create another model.
    - [W3Schools](https://www.w3schools.com/) came very useful to help create bootstrap navigation bars.
-   - [Bootstrap](https://getbootstrap.com/) this was used to help form the basic grid structure layout of the page.
+   - [Bootstrap](https://getbootstrap.com/) was used to help form the basic grid structure layout of the page.
    - [Djangocentral](https://djangocentral.com/) helped me to structure my site posts vertically and also helped me to create the comment model.
    - [Data Flair](https://data-flair.training/blogs/django-crud-example/) provided me better understanding on how to go about implementing C.R.U.D.
    - [Stackoverflow](https://stackoverflow.com/questions/73004670/i-want-to-crud-the-comments-of-a-django-user) helped to create the first two parts of C.R.U.D the Create and Read.
@@ -430,15 +427,15 @@ The following instructions will provide you with information on how to Deploy to
 - #### Mentor
    - Thanks to my Mentor for providing me with ideas for project.
    - Thanks to my mentor for the continous feedback during our meetings.
-   - Thanks to my mentor for making sure I pass eaxh criteria for the project.
-   - Thanks to my mentor for always providing space for me to learn more stuffs and improve my skills as a software engineer.
+   - Thanks to my mentor for making sure I pass each criteria for the project.
+   - Thanks to my mentor for always providing space for continuous learning and to improve my skills as a software engineer.
 
 - #### Tutor Support Team
-   - Thanks to Josh for helping me to sort out the my for loop and post structure.
+   - Thanks to Josh for helping me to sort out the for loop and post structure.
    - Thanks to Jason for helping sort out error messages that occured when created the category model.
    - Thanks to Ger for helping me to sort out linking my categories to my posts.
    - Thanks to Rebecca for helping sort out the bug for when the browser wasn't rendering the comments time stamp.
-   - Thanks to Sean for helping sort out that my favicon was appearing.
+   - Thanks to Sean for helping sort out the favicon was disappearance.
    - Thanks to Ed for helping sort out the issues I was having when trying to implement restriction of users to edit/delete comments of other users.
 
 - #### Fellow classmates/aluminis on Slack

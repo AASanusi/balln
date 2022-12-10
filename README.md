@@ -284,7 +284,7 @@ All fonts from this site were taken from Google Fonts.
 ### Automated Testing
    #### UnitTest
    - Basic UnitTest for the site logo passed. 
-   [Screenshot of basic UnitTest](media/screenshot_of_basic_unittest.png)
+   ![Screenshot of basic UnitTest](media/screenshot_of_basic_unittest.png)
    - Implementation of UnitTest will be performed later in the future.
 
 ### Validator Testing
